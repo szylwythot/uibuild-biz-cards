@@ -20,21 +20,31 @@ body{
     flex-direction: column;
     justify-content: center;
     align-content: left;
+    flex-wrap: wrap;
 
     width: 290px;
     height: 416px;
 
     padding: 27px;
-    
+
     background-color: #fff;
 }
 
-#root .bizCards .bizCard h2{
+#root .bizCards .bizCard h2.name{
+    flex: 1;
+    /* align-self: flex-end; */
+    /* padding-bottom: 80px; */
     font-size: 48px;
     color: #33793f;
+    
+    word-spacing: 8em;
 }
 
-#root .bizCards .bizCard h6{
+#root .bizCards .bizCard h6.restaurantName{
+    flex: 1;
+
+    padding-top: 20px;
+
     text-transform: uppercase;
     font-family: 'Montserrat', sans-serif;
     font-weight: 500;
@@ -42,7 +52,9 @@ body{
     letter-spacing: 0.1em;
 }
 
-#root .bizCards .bizCard p{
+#root .bizCards .bizCard p.restaurantAddress{
+    flex: 1;
     font-family: 'EB Garamond', serif;
     font-size: 24px;
+    word-spacing: 0.5em;
 }

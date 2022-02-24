@@ -32,17 +32,16 @@ function loadEvent(){
     for (const person of people) {
         innerHtml += `
             <div class="bizCard">
-                <h2>${person.firstName} ${person.lastName}</h2>
-                <h6>${person.restaurantName}</h6>
-                <p>
-                ${person.restaurantAddress}<br>
+                <h2 class="name">${person.firstName} ${person.lastName}</h2>
+                <h6 class="restaurantName">${person.restaurantName}</h6>
+                <p class="restaurantAddress">
+                ${person.restaurantAddress}
                 ${person.restaurantCity}<br>
-                ${person.restaurantState}<br>
+                ${person.restaurantState}
                 ${person.restaurantCountry}
                 </p>
             </div>
         `;
-        
     }
 
     rootElement.innerHTML = `
