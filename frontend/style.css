@@ -1,0 +1,48 @@
+body{
+    background-color: #ffeedf;
+    font-family: 'EB Garamond', serif;
+    font-weight: 400;
+    color: #999;
+}
+
+#root .bizCards{
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 62px;
+}
+
+#root .bizCards .bizCard{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: left;
+
+    width: 290px;
+    height: 416px;
+
+    padding: 27px;
+    
+    background-color: #fff;
+}
+
+#root .bizCards .bizCard h2{
+    font-size: 48px;
+    color: #33793f;
+}
+
+#root .bizCards .bizCard h6{
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+
+#root .bizCards .bizCard p{
+    font-family: 'EB Garamond', serif;
+    font-size: 24px;
+}
