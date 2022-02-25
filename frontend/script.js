@@ -34,14 +34,18 @@ function loadEvent(){
             <div class="bizCard">
                 <h2 class="name">${person.firstName} ${person.lastName}</h2>
                 <h6 class="restaurantName">${person.restaurantName}</h6>
-                <p class="restaurantAddress">
-                ${person.restaurantAddress}
-                ${person.restaurantCity}<br>
-                ${person.restaurantState}
-                ${person.restaurantCountry}
-                </p>
-            </div>
-        `;
+                <p class="restaurantAddress">${person.restaurantAddress} </p>
+                <p class="restaurantCity">${person.restaurantCity}</p>
+                <p class="restaurantState">${person.restaurantState} </p>
+                <p class="restaurantCountry">${person.restaurantCountry} </p>
+                </div>
+                `;
+                // <p class="restaurantAddress">
+                //     ${person.restaurantAddress} 
+                //     ${person.restaurantCity} <br>
+                //     ${person.restaurantState} 
+                //     ${person.restaurantCountry}
+                // </p>
     }
 
     rootElement.innerHTML = `
