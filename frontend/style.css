@@ -13,6 +13,10 @@ body{
     align-items: center;
     justify-content: center;
     gap: 62px;
+    
+    margin-top: 62px;
+    margin-bottom: 62px;
+
 }
 
 #root .bizCards .bizCard{
@@ -59,8 +63,31 @@ body{
     word-spacing: 0.5em;
 }
 
-@media only screen and (max-width: 600px) {
-    body {
-      background-color: #33793f;
+@media only screen and (max-width: 1118px) {
+    #root .bizCards{
+        width: 100%;
+        height: max-content;
+
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 62px;
     }
-  }
+
+    #root .bizCards .bizCard{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-content: left;
+        flex-wrap: wrap;
+    
+        width: 290px;
+        height: 416px;
+    
+        padding: 27px;
+    
+        background-color: #fff;
+    }
+}
